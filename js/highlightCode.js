@@ -8,9 +8,9 @@ console.log(text);
     var before = text.slice(pos, match.index);
     node.appendChild(document.createTextNode(before));
     var strong = document.createElement("strong");
+    strong.style.color = "Red";
     strong.appendChild(document.createTextNode(match[0]));
     node.appendChild(strong);
-    node.id=1;
     pos = keywords.lastIndex;
   }
   var after = text.slice(pos);
