@@ -10,6 +10,7 @@ console.log(text);
     var strong = document.createElement("strong");
     strong.appendChild(document.createTextNode(match[0]));
     node.appendChild(strong);
+    node.id=1;
     pos = keywords.lastIndex;
   }
   var after = text.slice(pos);
